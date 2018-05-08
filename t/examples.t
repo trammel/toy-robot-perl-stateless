@@ -76,7 +76,7 @@ REPORT
   },
 
 ) {
-  my $result = `echo '$test->{input}' | perl $Bin/../toy-robot.pl`;
+  my $result = `echo '$test->{input}' | perl '$Bin/../toy-robot.pl'`;
   chomp($result);
   is(
     $result,
